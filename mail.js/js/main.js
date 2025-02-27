@@ -36,23 +36,32 @@ const myArrListMail =
 ];
 
  const addMail = prompt('Aggiungi la tua email');
+ let noListMail = true;
 
 for (let i= 0; i < myArrListMail.length; i++) {
-    const controlMail= myArrListMail[i];
+    const controlMail = myArrListMail[i];
     
-    if (addMail === controlMail){
+    if (addMail === controlMail) {
+        noListMail = false;
         console.log(`Fantastico! Questa mail può accedere! ${controlMail}`);  //se addMail(quello che l utente inserisce, equivale a una mail presente, faccio a altrimenti faccio b);
         window.alert("Fantastico! Questa mail può accedere!");
-
-    } else { 
-        console.log('Spiacenti, questa mail non fa parte della lista!');
-        window.alert("Spiacenti! Questa mail non può accedere!");
-        break;
-    }
-    
-
-
+    }    
 }
 
+if (noListMail) {
+    console.log("Spiacenti! Questa mail non può accedere!");  //se addMail(quello che l utente inserisce, equivale a una mail presente, faccio a altrimenti faccio b);
+    window.alert("Spiacenti! Questa mail non può accedere!");
+}
+
+/*for (let i= 0; i < myArrListMail.length; i++) {
+    const controlMail = myArrListMail[i];
+    
+    if (addMail === controlMail) {
+        noListMail = false;
+        break;
+        console.log(`Fantastico! Questa mail può accedere! ${controlMail}`);  //se addMail(quello che l utente inserisce, equivale a una mail presente, faccio a altrimenti faccio b);
+        window.alert("Fantastico! Questa mail può accedere!");
+    }     
+}
 
 
