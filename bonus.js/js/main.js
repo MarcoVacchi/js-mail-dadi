@@ -14,16 +14,23 @@ console.log(numberUser)*/
 
 let minUser = 1;
 let maxUser = 6;
-let numberUser= parseInt((Math.random() * (maxUser - minUser + 1) + minUser));
+let numberUser= parseInt(prompt('Inserisci un numero da 1 a 6'));
 
 let minCpu = 1;
 let maxCpu = 6;
 let numberCpu= parseInt(Math.random() * (maxCpu - minCpu + 1) + minCpu);
 
-    if (numberUser > numberCpu) {
-    console.log(`Il giocatore ha vinto con il numero ${numberUser} mentre il computer ha realizzato un punteggio di ${numberCpu}`);
+   if (numberUser > 6 || numberUser === 0 || isNaN(numberUser) || numberUser === ' ') {
+        console.log('Number invalid');
+        window.alert("Inserisci un numero da 1 a 6; non uno spazio vuoto o una lettera");
+
+    } else if (numberUser > numberCpu) {
+        console.log(`Il giocatore ha vinto con il numero ${numberUser} mentre il computer ha realizzato un punteggio di ${numberCpu}`);
+    
     } else if (numberCpu > numberUser) {
+
     console.log(`Il computer ha vinto con il numero ${numberCpu} mentre il computer ha realizzato un punteggio di ${numberUser}`);
     } else {
+
     console.log(`Il punteggio finisce in pareggio con ${numberUser}`);
     }
