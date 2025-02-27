@@ -47,7 +47,6 @@ for (let i= 0; i < myArrListMail.length; i++) {
         window.alert("Fantastico! Questa mail può accedere!");
     }    
 }
-
 if (noListMail) {
     console.log("Spiacenti! Questa mail non può accedere!");  //se addMail(quello che l utente inserisce, equivale a una mail presente, faccio a altrimenti faccio b);
     window.alert("Spiacenti! Questa mail non può accedere!");
