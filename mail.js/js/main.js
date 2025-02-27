@@ -45,7 +45,7 @@ for (let i= 0; i < myArrListMail.length; i++) {
         window.alert("Fantastico! Questa mail può accedere!");
 
     } else { 
-        console.log('Spiacenti, questa mail non fa parte della lista!'+ controlMail);
+        console.log('Spiacenti, questa mail non fa parte della lista!');
         window.alert("Spiacenti! Questa mail non può accedere!");
         break;
     }
