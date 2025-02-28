@@ -52,6 +52,7 @@ if (noListMail) {
     window.alert("Spiacenti! Questa mail non può accedere!");
 }
 
+
 /*for (let i= 0; i < myArrListMail.length; i++) {
     const controlMail = myArrListMail[i];
     
@@ -62,5 +63,5 @@ if (noListMail) {
         window.alert("Fantastico! Questa mail può accedere!");
     }     
 }
-
+*/
 
